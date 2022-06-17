@@ -17,6 +17,7 @@ class sensu::repo {
       descr           => 'sensu',
       baseurl         => "https://packagecloud.io/sensu/stable/el/${repo_release}/\$basearch",
       repo_gpgcheck   => 1,
+      s3_enabled      => 1,
       gpgcheck        => 0,
       enabled         => 1,
       gpgkey          => 'https://packagecloud.io/sensu/stable/gpgkey',
